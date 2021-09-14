@@ -27,12 +27,12 @@ module.exports = {
         productName: "VOICEVOX",
         appId: "jp.hiroshiba.voicevox",
         copyright: "Hiroshiba Kazuyuki",
-        afterAllArtifactBuild: path.resolve(
-          __dirname,
-          "build",
-          "splitResources.js"
-        ),
         win: {
+          afterAllArtifactBuild: path.resolve(
+            __dirname,
+            "build",
+            "splitResources.js"
+          ),
           icon: "public/icon.png",
           target: [
             {

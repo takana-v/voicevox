@@ -41,6 +41,19 @@ module.exports = {
             },
           ],
         },
+        linux: {
+          icon: "public/icon.png",
+          target: [
+            {
+              target: "snap",
+              arch: ["x64"],
+            },
+            {
+              target: "tar.gz",
+              arch: ["x64"],
+            },
+          ],
+        },
       },
     },
   },

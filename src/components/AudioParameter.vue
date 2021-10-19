@@ -72,7 +72,13 @@ export default defineComponent({
     const previewValue = new PreviewableValue(() => props.value);
 
     const changeValue = (newValue: number) => {
-      emit("changeValue", props.accentPhraseIndex, props.moraIndex, newValue);
+      emit(
+        "changeValue",
+        props.accentPhraseIndex,
+        props.moraIndex,
+        newValue,
+        "pitch"
+      );
     };
 
     const changeValueByScroll = (deltaY: number, withDetailedStep: boolean) => {

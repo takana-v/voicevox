@@ -119,7 +119,8 @@ export type AudioMutations = {
     audioKey: string;
     accentPhraseIndex: number;
     moraIndex: number;
-    pitch: number;
+    data: number;
+    type: string;
   };
 };
 
@@ -222,7 +223,8 @@ export type AudioCommandActions = {
     audioKey: string;
     accentPhraseIndex: number;
     moraIndex: number;
-    pitch: number;
+    data: number;
+    type: string;
   }): void;
   COMMAND_SET_AUDIO_SPEED_SCALE(payload: {
     audioKey: string;
@@ -308,7 +310,8 @@ export type AudioCommandMutations = {
     audioKey: string;
     accentPhraseIndex: number;
     moraIndex: number;
-    pitch: number;
+    data: number;
+    type: string;
   };
   COMMAND_SET_AUDIO_SPEED_SCALE: { audioKey: string; speedScale: number };
   COMMAND_SET_AUDIO_PITCH_SCALE: { audioKey: string; pitchScale: number };

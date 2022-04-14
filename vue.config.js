@@ -68,6 +68,7 @@ module.exports = {
           include: "build/installer.nsh",
           oneClick: false,
           allowToChangeInstallationDirectory: true,
+          differentialPackage: false,
         },
         publish: {
           provider: "github",
